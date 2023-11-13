@@ -3,3 +3,5 @@ geth-tutorial
 keystore
 *.toml
 start-geth.sh
+geth-node
+tmp.md

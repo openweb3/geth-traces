@@ -1,0 +1,11 @@
+{
+  "hash": "0xcf5f3bf2104ec1d85782a6731b6fea791aba172e883db32e14f0416604bb1b0b",
+  "name": "common eth transfer",
+  "method": "debug_traceTransaction",
+  "trace": {
+    "gas": 21000,
+    "failed": false,
+    "returnValue": "",
+    "structLogs": []
+  }
+}

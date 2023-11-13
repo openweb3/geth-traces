@@ -1,6 +1,6 @@
 # geth trace
 
-Trace 允许用户精确的检查 EVM 在执行一笔或一批交易时, 真实的执行情况, 做了什么操作, 产生了什么影响(状态改变, gas 消耗等)
+Trace 允许用户精确的检查 EVM 在执行一笔或一批交易时真实的执行情况: 做了什么操作, 产生了什么影响(状态改变, gas 消耗等)
 
 ## state 可用性
 
@@ -10,9 +10,9 @@ Trace 允许用户精确的检查 EVM 在执行一笔或一批交易时, 真实�
 
 geth 的  trace 是通过 tracer 来 emit 的, 不同的 tracer 可以返回不同格式的 trace, geth 内置了一些 tracer, 也支持自定义 tracer. 总体而言, geth 支持三种 trace:
 
-* Basic traces: 最原始和底层的 EVM opcode traces -> https://geth.ethereum.org/docs/developers/evm-tracing#basic-traces
-* Built-in tracers: geth 内置的 trace 处理器(tracer) 可以将 trace 的格式做一个转换处理
-* Custom tracers: 开发者自定义的 trace 处理器(tracer), geth 支持 js 和 go 的自定义 tracer, 本质是一个方法
+* [Basic traces](https://geth.ethereum.org/docs/developers/evm-tracing#basic-traces): 最原始和底层的 EVM opcode traces, 也是默认的 trace
+* Built-in tracers: geth 内置了一些 tracer（callTracer, 4byteTracer, etc）， 可以将 trace 的格式做一个转换处理, 返回更易读的 trace
+* Custom tracers: geth 支持开发者根据需求自定义 tracer(本质是一个方法)，返回自身需要格式的 trace， 目前支持 go 和 js 两种语言开发
 
 ### [Basic traces](https://geth.ethereum.org/docs/developers/evm-tracing/basic-traces)
 
@@ -104,6 +104,21 @@ geth 支持使用 go 或 js 开发自定义的 tracer
 
 ## trace 相关的 RPC 方法
 
-* debug_traceTransaction
-* debug_traceBlock/debug_traceBlockByNumber/debug_traceBlockByHash
-* debug_traceCall
+* [debug_traceTransaction](https://geth.ethereum.org/docs/interacting-with-geth/rpc/ns-debug#debugtracetransaction)
+* [debug_traceBlock/debug_traceBlockByNumber/debug_traceBlockByHash](https://geth.ethereum.org/docs/interacting-with-geth/rpc/ns-debug#debugtraceblock)
+* [debug_traceCall](https://geth.ethereum.org/docs/interacting-with-geth/rpc/ns-debug#debugtracecall)
+  
+[TraceConfig](https://geth.ethereum.org/docs/interacting-with-geth/rpc/ns-debug#traceconfig) 可用于控制 trace 的部分字段是否返回.
+
+关于 RPC 的说明及参数介绍参看 geth 文档: https://geth.ethereum.org/docs/interacting-with-geth/rpc/ns-debug#debugtracetransaction
+
+更多 trace 数据查看 [holesky-traces](./holesky-traces/README.md)
+
+## 参考
+
+* [evm.codes](https://www.evm.codes/)
+* [geth debug RPC](https://geth.ethereum.org/docs/interacting-with-geth/rpc/ns-debug)
+* [evm-tracing](https://geth.ethereum.org/docs/developers/evm-tracing)
+* [trace 介绍视频](https://www.youtube.com/watch?v=b8RdmGsilfU)
+* [geth tracer 相关代码](https://github.com/ethereum/go-ethereum/tree/master/eth/tracers)
+* [geth StructLogger 代码](https://github.com/ethereum/go-ethereum/blob/master/eth/tracers/logger/logger.go#L108)
