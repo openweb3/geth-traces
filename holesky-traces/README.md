@@ -8,6 +8,7 @@
 4. 调用 builtin 函数(keccak256)的行为
 5. selfdestruct
 6. out of gas fail
+7. require, revert, assert fail 
 
 ## 其他
 
