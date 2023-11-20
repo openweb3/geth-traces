@@ -1,0 +1,21 @@
+{
+  "hash": "0x436ddc95f21ffd3a9e8afcf540e1d0e284a7522147fe3e6c869b685f1a5240a0",
+  "name": "invalid opcode",
+  "method": "debug_traceTransaction",
+  "trace": {
+    "gas": 1000000,
+    "failed": true,
+    "returnValue": "",
+    "structLogs": [
+      {
+        "pc": 0,
+        "op": "INVALID",
+        "gas": 946982,
+        "gasCost": 0,
+        "depth": 1,
+        "stack": [],
+        "memory": []
+      }
+    ]
+  }
+}

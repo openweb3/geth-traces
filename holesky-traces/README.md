@@ -9,6 +9,10 @@
 5. selfdestruct
 6. out of gas fail
 7. require, revert, assert fail 
+8. try catch
+9. precompiled contract
+10. refund gas
+11. invalid opcode: 0xfe
 
 ## 其他
 
