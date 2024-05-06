@@ -1,4 +1,5 @@
-contract
+contract/node_modules
+contract/.env
 geth-tutorial
 keystore
 *.toml

@@ -1,0 +1,42 @@
+[
+    {
+        "name": "common eth transfer",
+        "hash": "0xcf5f3bf2104ec1d85782a6731b6fea791aba172e883db32e14f0416604bb1b0b"
+    },
+    {
+        "name": "create contract",
+        "hash": "0x582d4cd6b7564abbb0692c3a2b24da0a81e8f342a404d16b855f8cc9a024e7bf"
+    },
+    {
+        "name": "erc20 transfer",
+        "hash": "0xf862178afc62731157e91760ec2a19c79a68e6d070c0f031131a9594dac68519"
+    },
+    {
+        "name": "erc721 transfer",
+        "hash": "0x006f9504e301713b9128c0ffb215dfac3d643ec4435043c645c2c149b7a0da4f"
+    },
+    {
+        "name": "nft mint",
+        "hash": "0x46a3a5307e363e10db675a4ea80d248e508dece3191a05af21563e23fa9ae82c"
+    },
+    {
+        "name": "swap and create2",
+        "hash": "0x058f95fd98b393b504522940c7d6532d992f3326d589013b9ca0b495b477eca2"
+    },
+    {
+        "name": "contract multi eth transfer",
+        "hash": "0x48a3a724da11ba936bcc413307def1bbecf7f8bcb67d75295808db7bc9c619da"
+    },
+    {
+        "name": "out of gas fail",
+        "hash": "0x591a5b9c207b3996222a115388d7fb65fcd17cc36576de591a4c4b3c3f72a4df"
+    },
+    {
+        "name": "self destruct",
+        "hash": "0x8eae7b4f2b6098fac9ccbba9ffb2838e1411cd96a463b5200735d69cfe031ab2"
+    }, 
+    {
+        "name": "built in function keccak256",
+        "hash": "0xf4d4b64fb2fda01c283cd838ef8f075a8a5b1eac0c4c52d18e385efd34d7c622"
+    }
+]
